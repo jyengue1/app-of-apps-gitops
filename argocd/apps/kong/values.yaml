@@ -1,0 +1,14 @@
+env:
+  database: "off"
+
+ingressController:
+  enabled: true
+  gatewayAPI:
+    enabled: true
+
+proxy:
+  type: NodePort
+  http:
+    enabled: true
+  tls:
+    enabled: true

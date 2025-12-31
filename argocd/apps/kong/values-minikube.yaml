@@ -2,3 +2,4 @@ replicaCount: 1
 
 httproute:
   host: api.company.local
+  port: 8080
