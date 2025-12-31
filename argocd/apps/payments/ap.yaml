@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
     targetRevision: HEAD
-    path: apps/payments/chart
+    path: argocd/apps/orders
     helm:
       valueFiles:
         - values.yaml
