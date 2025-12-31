@@ -1,0 +1,26 @@
+# ---- Kong ----
+env:
+  database: "off"
+
+ingressController:
+  enabled: true
+  gatewayAPI:
+    enabled: true
+
+proxy:
+  type: NodePort
+  http:
+    enabled: true
+  tls:
+    enabled: true
+
+# ---- Prometheus ----
+prometheus:
+  prometheusSpec:
+    retention: 6h
+
+grafana:
+  adminUser: admin
+  adminPassword: admin
+  service:
+    type: NodePort
