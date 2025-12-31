@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
     targetRevision: main
-    path: apps/order/chart
+    path: apps/orders/chart
     helm:
       valueFiles:
         - values.yaml
