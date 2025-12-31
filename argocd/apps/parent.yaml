@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
     targetRevision: HEAD
-    path: argocd/apps
+    path: apps
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
