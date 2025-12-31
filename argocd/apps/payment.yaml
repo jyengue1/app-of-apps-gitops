@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
-    targetRevision: main
+    targetRevision: 
     path: apps/payments/chart
     helm:
       valueFiles:
