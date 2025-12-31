@@ -11,7 +11,7 @@ spec:
     targetRevision: 2.38.0
     helm:
       valueFiles:
-        - values.yaml
+        - appps/clusters/minikube/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: kong
