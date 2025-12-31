@@ -11,7 +11,7 @@ spec:
     targetRevision: 55.5.0
     helm:
       valueFiles:
-        - apps/clusters/minikube/values.yaml
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: observability

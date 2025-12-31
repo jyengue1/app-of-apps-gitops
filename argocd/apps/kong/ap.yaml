@@ -1,21 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: payments
+  name: kong
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
-    targetRevision: 
-    path: apps/payments/chart
+    repoURL: https://charts.konghq.com
+    chart: kong
+    targetRevision: 2.38.0
     helm:
       valueFiles:
         - values.yaml
-        - values-minikube.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: apps
+    namespace: kong
   syncPolicy:
     automated:
       prune: true
