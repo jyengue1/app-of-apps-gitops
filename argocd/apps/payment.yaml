@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/you/payments-app-repo.git
-    targetRevision: HEAD
-    path: chart
+    repoURL: https://github.com/jyengue1/app-of-apps-gitops.git
+    targetRevision: main
+    path: apps/payments/chart
     helm:
       valueFiles:
         - values.yaml
