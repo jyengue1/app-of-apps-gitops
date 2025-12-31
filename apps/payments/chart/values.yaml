@@ -1,0 +1,18 @@
+name: orders
+
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: stable
+
+service:
+  port: 80
+
+gateway:
+  name: kong
+  namespace: kong
+
+httproute:
+  host: api.company.com
+  path: /orders
